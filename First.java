@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Scanner;
 public class First {
     public static void main(String[] args) {
         //Assigning re return value of sum in ans and show the output of ans.
@@ -13,6 +12,7 @@ public class First {
         String message = greet();
         System.out.println(message);
 
+        //Same as in String
         Scanner gr = new Scanner(System.in);
             System.out.print("Enter your name:- ");
             String naam = gr.next();
