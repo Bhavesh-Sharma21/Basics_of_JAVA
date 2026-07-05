@@ -1,22 +1,26 @@
 import java.util.Scanner;
 public class First {
     public static void main(String[] args) {
-        //Assigning re return value of sum in ans and show the output of ans.
+    {   //Assigning re return value of sum in ans and show the output of ans.
         int ans = sum();
         System.out.println("You answer is:- "+ans);
+        }
 
-        //Printing the value of sum2 in main
+    {   //Printing the value of sum2 in main
         System.out.println("The output is:- "+ sum2(45, 67));
+        }
 
-        // Asigning the value of greet in message and then print message.
+    {   // Asigning the value of greet in message and then print message.
         String message = greet();
         System.out.println(message);
+        }
 
-        //Same as in String
+    {   //Same as in String
         Scanner gr = new Scanner(System.in);
             System.out.print("Enter your name:- ");
             String naam = gr.next();
         System.out.println(greetings(naam));
+        }
         
     }
 
