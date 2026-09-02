@@ -54,7 +54,6 @@ public class First {
         static String greetings(String name){
             
             return "Hello " + name +" How are you?";
-
         }
 
 }
