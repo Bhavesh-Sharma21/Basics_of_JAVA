@@ -72,6 +72,86 @@ public class Basic_maths_for_DSA {
         return true;
     }
 
+    //7. GCD of a number.
+    static int getGCD(int a, int b){
+        //gcd(a,b) <- gcd(b,a%b)
+        while(b != 0){
+        int oldvalueofb = b;
+        b = a%b;
+        a = oldvalueofb;
+        }
+        int ans = a;
+        return ans;
+    }
+
+    //8.LCM of a number.
+    static int getLCM(int a, int b){
+        int gcd = getGCD(a, b);
+        //gcd(18,12) =6
+        int prod = a*b;
+        //prod(a,b) -> 216
+        int lcm = prod/gcd;
+        //216/6
+
+        return lcm;
+    }
+
+    //9. Armstrong number.
+    static boolean isArmstrongNumber(int n1){
+        int sum = 0; 
+        int originalNum = n1;
+
+        while(n1 != 0){
+            int digit = n1 % 10;
+            int cubeofdigit = digit*digit*digit;
+            sum = sum + cubeofdigit;
+
+            n1 = n1 /10;
+        }
+
+        if(sum == originalNum){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    //10. Find Divisor of Check Perfect number.
+
+    static boolean checkPerfectNumber(int n2){
+        int sum = 1;
+
+        for(int i = 2; i*i <= n2 ; i++){
+            if(n2 % i == 0){
+                int firstfactor = i;
+                int secondfactor = n2 / i;
+
+                sum = sum + firstfactor + secondfactor;
+            }
+        }
+        if(sum == n2){
+                return true;
+            }
+            else{
+                return false;
+            }
+    }
+
+    //11. Print all Prime from 1 to N.
+    static void printAllPrimes(int n){
+        //print all prime no. from 1 to N
+        // 1 isn't a prime number
+
+        for(int num = 2; num <= n; num++){
+            boolean isprime = isPrime(num);
+
+            if(isprime == true){
+                System.out.println(num);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         //1. Print Digits of a number.
         int num = 53127;
@@ -97,6 +177,24 @@ public class Basic_maths_for_DSA {
         //6. Prime number check.
         int n = 7;
         System.out.println(isPrime(n));
+
+        //7. GCD of a number.
+        System.out.println(getGCD(18, 12));
+
+        //8. LCM of a number.
+        System.out.println(getLCM(18, 12));
+
+        //9. Armstrong Number.
+        int n1 = 153;
+        System.out.println(isArmstrongNumber(n1));
+
+        //10. Find Divisor of Check Perfect number.
+        int n2 = 7;
+        System.out.println(checkPerfectNumber(n2));
+
+        //11. Print all Prime from 1 to N.
+        printAllPrimes(10);
+
 
 
     }
