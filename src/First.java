@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Scanner;
 public class First {
     public static void main(String[] args) {
@@ -24,7 +26,7 @@ public class First {
         
     }
 
-    // First Method :- sum of two numbers without any .
+    // src.First Method :- sum of two numbers without any .
     static int sum(){
         Scanner sc = new Scanner(System.in);
         

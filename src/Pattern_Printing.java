@@ -1,3 +1,5 @@
+package src;
+
 public class Pattern_Printing {
     public static void main(String[] args) {
      // 1. Simple square printing:-

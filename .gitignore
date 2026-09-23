@@ -1,0 +1,12 @@
+# Compiled class files (Yeh code run karne par automatically banti hain)
+*.class
+out/
+bin/
+
+# IntelliJ IDEA project files (Aapki personal IDE configurations)
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db

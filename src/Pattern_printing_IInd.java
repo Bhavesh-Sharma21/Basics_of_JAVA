@@ -1,3 +1,5 @@
+package src;
+
 public class Pattern_printing_IInd{
     public static void main(String[] args) {
        //  11. Diamond pattern printing:-

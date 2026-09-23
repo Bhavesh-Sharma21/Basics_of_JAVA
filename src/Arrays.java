@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Scanner;
 
 public class Arrays {
@@ -99,7 +101,7 @@ public class Arrays {
         // }
         // System.out.println("The minimum value of this Array is " + minvalue);
 
-        //2D Arrays:-
+        //2D src.Arrays:-
 
         // int arr [][] = {{1,2}, {2,3,4,5}, {3,4,4,5,6,7},{4}};
         // // System.out.println(arr[2][0]);
@@ -111,7 +113,7 @@ public class Arrays {
         //     System.out.println();
         // }
 
-        // //Take Input in 2D Arrays
+        // //Take Input in 2D src.Arrays
 
         // int brr [][] = new int [3][4];
         // for(int i = 0; i <= brr.length -1; i++){

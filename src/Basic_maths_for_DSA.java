@@ -1,3 +1,5 @@
+package src;
+
 public class Basic_maths_for_DSA {
     //1. Print Digits of a number.
     static void printnumber(int num){
